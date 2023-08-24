@@ -6,6 +6,8 @@ My Neovim config
 
 ## Usage
 
+After cloning this repo in your config directory
+
 Install packer from https://github.com/wbthomason/packer.nvim
 
 Then just run
