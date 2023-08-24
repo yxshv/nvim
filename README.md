@@ -15,7 +15,6 @@ nvim +PackerSync
 ```
 > You can also run `:PackerSync` inside nvim
 
-<br>
 
 <details>
 <summary><strong>How to add more languages for lsp (autocomplete & errors & go to definition) and synax highlight?</strong></summary>
