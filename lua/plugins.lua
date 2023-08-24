@@ -41,6 +41,4 @@ return require('packer').startup(function(use)
 	use "L3MON4D3/LuaSnip"
 
 	use { "williamboman/mason.nvim" }
-
-	-- For Elixir
 end)
