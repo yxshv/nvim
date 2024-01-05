@@ -2,7 +2,8 @@
 
 My Neovim config
 
-![](https://us-east-1.tixte.net/uploads/kekda.wants.solutions/explorer_Gncs4VpYhk.png)
+![an image of my neovim config, opened in alacritty terminal](https://github.com/yxshv/nvim/assets/93475253/a64bc730-08c9-4769-a8f4-b3d0bb24830f)
+> The terminal used is [alacritty](https://alacritty.org/)
 
 ## Usage
 
