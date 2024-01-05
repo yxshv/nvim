@@ -30,6 +30,34 @@ Inside `neovim`
 > You can use tab to autcomplete the names of language
 </details>
 
+## Keybindings
+
+### Tabs
+
+- `te` - create a new tab
+- `TAB` - move to the next tab
+- `SHIFT+TAB` - move to the previous tab
+
+### Terminal
+
+- `CTRL+SPACE` - Toggling terminal
+
+### File Finders
+
+- `sf` - File browser
+- `;f` - Fuzzy finder
+
+### LSP
+
+- `,e` - Open diagnostic
+- `,p` - Move to next diagnostic
+- `,,p` - Move to previous diagnostic
+- `,q` - Open a tab with listing all the diagnostics
+
+
+- `,d` - Get declration (same as hovering on any other IDE)
+- `,f` - Format code
+
 ## Plugins used
 
 [Packer](https://github.com/wbthomason/packer.nvim) for managing plugins
