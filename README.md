@@ -77,3 +77,4 @@ Inside `neovim`
 - lspkind.nvim - https://github.com/onsails/lspkind.nvim
 - LuaSnip - https://github.com/L3MON4D3/LuaSnip
 - mason.nvim - https://github.com/williamboman/mason.nvim
+- nvim-autopairs - https://github.com/windwp/nvim-autopairs
