@@ -56,7 +56,7 @@ Inside `neovim`
 - `,q` - Open a tab with listing all the diagnostics
 
 
-- `,d` - Get declration (same as hovering on any other IDE)
+- `,d` - Get declaration (same as hovering on any other IDE)
 - `,f` - Format code
 
 ## Plugins used
