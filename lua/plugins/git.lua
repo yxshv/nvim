@@ -1,5 +1,27 @@
 return {
   {
+    "NeogitOrg/neogit",
+    cmd = "Neogit",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "sindrets/diffview.nvim",
+      "nvim-telescope/telescope.nvim",
+    },
+    keys = {
+      { "<leader>gg", "<cmd>Neogit<cr>", desc = "Open Neogit" },
+      { "<leader>gc", "<cmd>Neogit commit<cr>", desc = "Neogit commit" },
+      { "<leader>gP", "<cmd>Neogit push<cr>", desc = "Neogit push" },
+      { "<leader>gL", "<cmd>Neogit pull<cr>", desc = "Neogit pull" },
+    },
+    opts = {
+      graph_style = "unicode",
+      integrations = {
+        diffview = true,
+        telescope = true,
+      },
+    },
+  },
+  {
     "lewis6991/gitsigns.nvim",
     event = { "BufReadPre", "BufNewFile" },
     opts = {
