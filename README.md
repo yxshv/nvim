@@ -1,12 +1,6 @@
-# Neovim Setup
+# My neovim cnofig
 
-This workspace contains the Neovim config that was installed to:
-
-```sh
-~/.config/nvim
-```
-
-It is based on the previous `yxshv/nvim` setup, updated for current Neovim APIs and `lazy.nvim`.
+This workspace contains the Neovim config that I use
 
 ## Installed Tools
 
