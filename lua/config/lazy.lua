@@ -15,4 +15,5 @@ require("lazy").setup("plugins", {
   change_detection = { notify = false },
   checker = { enabled = true },
   install = { colorscheme = { "kanagawa-dragon", "habamax" } },
+  rocks = { enabled = false },
 })
