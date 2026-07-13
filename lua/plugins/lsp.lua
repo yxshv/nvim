@@ -40,8 +40,12 @@ return {
           vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
           vim.keymap.set("n", "gi", vim.lsp.buf.implementation, opts)
           vim.keymap.set("n", "gr", vim.lsp.buf.references, opts)
-          vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
-          vim.keymap.set("n", ",d", vim.lsp.buf.hover, opts)
+          local hover = function()
+            vim.lsp.buf.hover({ border = "none" })
+          end
+
+          vim.keymap.set("n", "K", hover, opts)
+          vim.keymap.set("n", ",d", hover, opts)
           vim.keymap.set("n", ",f", function()
             vim.lsp.buf.format({ async = true })
           end, opts)

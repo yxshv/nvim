@@ -8,8 +8,6 @@ return {
       local transparent_groups = {
         "Normal",
         "NormalNC",
-        "NormalFloat",
-        "FloatBorder",
         "SignColumn",
         "EndOfBuffer",
         "LineNr",
@@ -23,6 +21,13 @@ return {
       for _, group in ipairs(transparent_groups) do
         vim.api.nvim_set_hl(0, group, { bg = "NONE" })
       end
+
+      -- Keep floating windows opaque so hover documentation stands apart
+      -- from the code underneath the terminal's transparent background.
+      vim.api.nvim_set_hl(0, "NormalFloat", { fg = "#dcd7ba", bg = "#1f1f28" })
+      vim.api.nvim_set_hl(0, "FloatBorder", { fg = "#7e9cd8", bg = "#1f1f28" })
+      vim.api.nvim_set_hl(0, "FloatTitle", { fg = "#7e9cd8", bg = "#1f1f28", bold = true })
+      vim.api.nvim_set_hl(0, "WinSeparator", { fg = "#ffffff", bg = "NONE" })
     end,
   },
   {
@@ -45,7 +50,8 @@ return {
       require("bufferline").setup({
         options = {
           mode = "tabs",
-          separator_style = "thin",
+          separator_style = { "", "" },
+          indicator = { style = "none" },
           show_buffer_close_icons = true,
           show_close_icon = true,
         },
@@ -62,7 +68,7 @@ return {
           close_button_visible = { bg = "NONE" },
           close_button_selected = { bg = "NONE" },
           tab = { bg = "NONE" },
-          tab_selected = { bg = "NONE" },
+          tab_selected = { bg = "NONE", bold = true },
           tab_separator = { bg = "NONE", fg = "#54546d" },
           tab_separator_selected = { bg = "NONE", fg = "#7e9cd8" },
         },

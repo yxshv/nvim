@@ -20,6 +20,7 @@ vim.opt.splitright = true
 vim.opt.tabstop = 2
 vim.opt.termguicolors = true
 vim.opt.updatetime = 250
+vim.opt.winborder = "rounded"
 vim.opt.wrap = false
 
 vim.diagnostic.config({
