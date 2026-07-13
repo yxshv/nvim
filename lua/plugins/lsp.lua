@@ -37,7 +37,10 @@ return {
           vim.bo[event.buf].omnifunc = "v:lua.vim.lsp.omnifunc"
 
           vim.keymap.set("n", "gD", vim.lsp.buf.declaration, opts)
-          vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
+          vim.keymap.set("n", "gd", function()
+            vim.cmd("tab split")
+            vim.lsp.buf.definition()
+          end, opts)
           vim.keymap.set("n", "gi", vim.lsp.buf.implementation, opts)
           vim.keymap.set("n", "gr", vim.lsp.buf.references, opts)
           local hover = function()
